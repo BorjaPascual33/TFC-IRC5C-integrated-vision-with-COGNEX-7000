@@ -1,0 +1,22 @@
+
+MODULE user (SYSMODULE)
+
+ ! Predefined user data
+ !*********************
+
+ ! Declaration of numeric registers reg1...reg5
+ VAR num reg1 := 0;
+ VAR num reg2 := 0;
+ VAR num reg3 := 0;
+ VAR num reg4 := 0;
+ VAR num reg5 := 0;
+
+ ! Declaration of stopwatch clock1
+ VAR clock clock1;
+ TASK PERS wobjdata wobj1:=[FALSE,TRUE,"",[[280.553,-14.7208,129.558],[0.999908,-0.006615,-0.0018619,0.0116687]],[[0,0,0],[1,0,0,0]]];
+ CONST robtarget casa:=[[169.38,-52.89,445.82],[0.487765,0.028755,0.872071,-0.02739],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+
+ ! Template for declaration of workobject wobj1
+ !TASK PERS wobjdata wobj1 := [FALSE, TRUE, "", [[0, 0, 0],[1, 0, 0, 0]],[[0, 0, 0],[1, 0, 0, 0]]];
+
+ENDMODULE
